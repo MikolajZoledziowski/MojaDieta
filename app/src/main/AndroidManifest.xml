@@ -9,17 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuGlowne" >
-        <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".MenuGlowne">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".Produkt"
-            android:parentActivityName=".MenuGlowne" >
-
-        </activity>
+        <activity
+            android:name=".Produkt"
+            android:parentActivityName=".MenuGlowne"></activity>
+        <activity android:name=".DodajProdukt"
+            android:parentActivityName=".Produkt"
+            ></activity>
     </application>
 
 </manifest>
