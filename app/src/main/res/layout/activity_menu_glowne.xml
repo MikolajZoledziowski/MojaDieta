@@ -10,14 +10,16 @@
         android:id="@+id/button6"
         android:layout_width="332dp"
         android:layout_height="68dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:text="Button"
-        app:layout_constraintHorizontal_bias="0.59"
+        android:hint="@string/Button_Produkt"
+        android:onClick="Produkt"
+        android:text="@string/Button_Produkt"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        android:layout_marginLeft="16dp" />
+        tools:onClick="Produkt" />
 
     <Button
         android:id="@+id/button5"
