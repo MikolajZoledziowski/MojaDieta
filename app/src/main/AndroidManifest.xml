@@ -18,10 +18,11 @@
         </activity>
         <activity
             android:name=".Produkt"
-            android:parentActivityName=".MenuGlowne"></activity>
-        <activity android:name=".DodajProdukt"
-            android:parentActivityName=".Produkt"
-            ></activity>
+            android:parentActivityName=".MenuGlowne" />
+        <activity
+            android:name=".DodajProdukt"
+            android:parentActivityName=".Produkt" />
+        <activity android:name=".Lodowka"></activity>
     </application>
 
 </manifest>

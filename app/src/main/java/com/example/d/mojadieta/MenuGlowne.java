@@ -17,5 +17,11 @@ public class MenuGlowne extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+    public void Lodowka(View view) {
+        Intent intent = new Intent(this, Lodowka.class);
+
+        startActivity(intent);
+    }
 }
 
