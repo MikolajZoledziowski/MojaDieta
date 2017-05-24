@@ -3,19 +3,13 @@ package com.example.d.mojadieta;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 
-public class Lodowka extends AppCompatActivity {
+public class Dodaj_zawartosc extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lodowka);
+        setContentView(R.layout.activity_dodaj_zawartosc);
         Intent intent = getIntent();
-    }
-    public void ZawstoscDodaj(View view) {
-        Intent intent = new Intent(this, Dodaj_zawartosc.class);
-
-        startActivity(intent);
     }
 }

@@ -26,7 +26,8 @@
         <activity android:name=".przepisy" />
         <activity android:name=".wprowadz_przepis" />
         <activity android:name=".diety" />
-        <activity android:name=".wprowadz_diete"></activity>
+        <activity android:name=".wprowadz_diete" />
+        <activity android:name=".Dodaj_zawartosc"></activity>
     </application>
 
 </manifest>
