@@ -18,10 +18,15 @@
         </activity>
         <activity
             android:name=".Produkt"
-            android:parentActivityName=".MenuGlowne"></activity>
-        <activity android:name=".DodajProdukt"
-            android:parentActivityName=".Produkt"
-            ></activity>
+            android:parentActivityName=".MenuGlowne" />
+        <activity
+            android:name=".DodajProdukt"
+            android:parentActivityName=".Produkt" />
+        <activity android:name=".Lodowka" />
+        <activity android:name=".przepisy" />
+        <activity android:name=".wprowadz_przepis" />
+        <activity android:name=".diety" />
+        <activity android:name=".wprowadz_diete"></activity>
     </application>
 
 </manifest>
