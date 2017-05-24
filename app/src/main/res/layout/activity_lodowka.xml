@@ -32,25 +32,29 @@
         android:text="Zawartość"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="24sp"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="88dp"
         android:layout_height="48dp"
-        android:background="@color/colorPrimaryDark"
+
+        android:onClick="ZawstoscDodaj"
         android:text="+"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@+id/textView9"
+        android:background="@drawable/przyciski"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="0dp"
         app:layout_constraintRight_toRightOf="@+id/textView9"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
         app:layout_constraintLeft_toLeftOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <TextView
         android:id="@+id/textView10"

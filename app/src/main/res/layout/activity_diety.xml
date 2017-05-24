@@ -31,7 +31,9 @@
         android:text="@string/button_send"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText"
         app:layout_constraintLeft_toRightOf="@+id/editText"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/przyciski"
+        android:textColor="@android:color/white"/>
 
     <EditText
         android:id="@+id/editText2"
@@ -75,9 +77,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="-6dp"
-        android:layout_marginLeft="208dp"
+        android:layout_marginLeft="99dp"
         android:onClick="doprzepisow"
         android:text="Przejdź do przepisów"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/przyciski"
+        android:textColor="@android:color/white"/>
 </android.support.constraint.ConstraintLayout>
