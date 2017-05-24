@@ -2,4 +2,38 @@
     <string name="app_name">Moja Dieta</string>
     <string name="Button_Produkt">Produkt</string>
     <string name="Activity_Produkt">         Produkt</string>
+    <string name="button_send">+</string>
+    <string name="button_send2">+</string>
+    <string name="edit_message">nazwa nowej diety</string>
+    <string name="edit_message2">Nazwa nowego przepisu</string>
+    <string-array name="diets_array">
+        <item>Dieta 1000 kalorii</item>
+        <item>Dieta norweska</item>
+        <item>Dieta Andersona</item>
+        <item>Dieta hollywodzka</item>
+        <item>Dieta kapuściana</item>
+        <item>Dieta Turbo</item>
+        <item>Dieta wegetariańska</item>
+        <item>Dieta przy anemii</item>
+        <item>Dieta proteinowa (dukana)</item>
+        <item>Dieta śródziemnomorska</item>
+        <item>Dieta szwedzka</item>
+        <item>Dieta na chandrę</item>
+        <item>Dieta Gersona</item>
+    </string-array>
+    <string-array name="przepisy_array">
+        <item>Sałatka owocowa</item>
+        <item>Kanapka z tuńczykiem</item>
+        <item>Makaron ze szpinakiem</item>
+        <item>Zupa warzywna</item>
+        <item>Pasta jajeczna</item>
+        <item>Zupa koperkowa</item>
+        <item>Zapiekanka z serem</item>
+        <item>Ziemniaczki po włosku</item>
+        <item>Makaron po norwesku</item>
+        <item>Krewetrki w sosie</item>
+        <item>Kanapka z indykiem</item>
+        <item>Jogurtowa uczta</item>
+        <item>Tarta owocowa</item>
+    </string-array>
 </resources>

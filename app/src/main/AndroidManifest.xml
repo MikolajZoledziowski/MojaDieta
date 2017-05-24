@@ -22,7 +22,11 @@
         <activity
             android:name=".DodajProdukt"
             android:parentActivityName=".Produkt" />
-        <activity android:name=".Lodowka"></activity>
+        <activity android:name=".Lodowka" />
+        <activity android:name=".przepisy" />
+        <activity android:name=".wprowadz_przepis" />
+        <activity android:name=".diety" />
+        <activity android:name=".wprowadz_diete"></activity>
     </application>
 
 </manifest>
