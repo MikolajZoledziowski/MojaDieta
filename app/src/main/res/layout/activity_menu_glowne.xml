@@ -19,13 +19,9 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:onClick="Produkt"
-        android:background="@drawable/przyciski"
-        android:textColor="@android:color/white"/>
-
+        tools:onClick="Produkt" />
 
     <Button
-
         android:id="@+id/button5"
         android:layout_width="332dp"
         android:layout_height="68dp"
@@ -37,24 +33,20 @@
         app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6"
-        android:background="@drawable/przyciski"
-        android:textColor="@android:color/white"/>
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="332dp"
         android:layout_height="68dp"
         android:layout_marginTop="16dp"
-        android:text="Plan żywieniowy"
+        android:text="Button"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="16dp"
         app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintTop_toBottomOf="@+id/button4"
-        android:layout_marginLeft="16dp"
-        android:background="@drawable/przyciski"
-        android:textColor="@android:color/white"/>
+        android:layout_marginLeft="16dp" />
 
     <Button
         android:id="@+id/button4"
@@ -67,9 +59,7 @@
         android:text="Diety"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        android:background="@drawable/przyciski"
-        android:textColor="@android:color/white"/>
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button"
@@ -83,7 +73,5 @@
         app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/przyciski"
-        android:textColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

@@ -13,9 +13,4 @@ public class Lodowka extends AppCompatActivity {
         setContentView(R.layout.activity_lodowka);
         Intent intent = getIntent();
     }
-    public void ZawstoscDodaj(View view) {
-        Intent intent = new Intent(this, Dodaj_zawartosc.class);
-
-        startActivity(intent);
-    }
 }
