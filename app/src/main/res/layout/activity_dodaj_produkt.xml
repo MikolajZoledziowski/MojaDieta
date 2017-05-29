@@ -7,6 +7,8 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.d.mojadieta.DodajProdukt">
@@ -111,11 +113,10 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
+
         android:inputType="textPersonName"
-        android:text="Nazwa"
-        android:textAllCaps="false"
-        android:textSize="18sp"
+        android:hint="Nazwa"
+
         app:layout_constraintBottom_toTopOf="@+id/spinner2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

@@ -9,7 +9,7 @@ import android.widget.Spinner;
 
 public class DodajProdukt extends AppCompatActivity {
     Spinner spinner;
-     EditText editText;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dodaj_produkt);
@@ -19,14 +19,10 @@ public class DodajProdukt extends AppCompatActivity {
         ArrayAdapter adapter =ArrayAdapter.createFromResource(this,R.array.Rodzajewag,android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
         //czyszczenie
-        editText = (EditText)findViewById(R.id.editText);
-        editText.setOnClickListener(this);
+
     }
 
 
-    public void Wyczysc() {
-        editText.setText("");
-    }
 
 
 }
