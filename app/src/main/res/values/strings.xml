@@ -36,4 +36,19 @@
         <item>Jogurtowa uczta</item>
         <item>Tarta owocowa</item>
     </string-array>
+    <string-array name="produkty_array">
+        <item>Banan</item>
+        <item>Jaja</item>
+        <item>Makaron</item>
+        <item>Ziemniaki</item>
+        <item>Schabowe</item>
+        <item>Pierś z kurczaka</item>
+        <item>Ser żołty</item>
+        <item>Ser biłały póltłusty</item>
+        <item>Wołowina</item>
+        <item>Mleko</item>
+        <item>Marchew</item>
+        <item>Jogurt naturalny</item>
+        <item>Szynka</item>
+    </string-array>
 </resources>

@@ -22,12 +22,18 @@
         <activity
             android:name=".DodajProdukt"
             android:parentActivityName=".Produkt" />
-        <activity android:name=".Lodowka" />
-        <activity android:name=".przepisy" />
-        <activity android:name=".wprowadz_przepis" />
-        <activity android:name=".diety" />
-        <activity android:name=".wprowadz_diete" />
-        <activity android:name=".Dodaj_zawartosc"></activity>
+        <activity android:name=".Lodowka"
+                  android:parentActivityName=".MenuGlowne"/>
+        <activity android:name=".przepisy"
+                  android:parentActivityName=".MenuGlowne"/>
+        <activity android:name=".wprowadz_przepis"
+                  android:parentActivityName=".przepisy"/>
+        <activity android:name=".diety"
+                  android:parentActivityName=".MenuGlowne"/>
+        <activity android:name=".wprowadz_diete"
+                  android:parentActivityName=".diety"/>
+        <activity android:name=".Dodaj_zawartosc"
+                  android:parentActivityName=".Lodowka"/>
     </application>
 
 </manifest>
