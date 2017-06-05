@@ -21,7 +21,7 @@ public class przepisy extends AppCompatActivity implements AdapterView.OnItemSel
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_przepisy);
 
-        spinner = (Spinner) findViewById(R.id.spinner2);
+        spinner = (Spinner) findViewById(R.id.wybiezwage);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.przepisy_array, android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
@@ -29,7 +29,7 @@ public class przepisy extends AppCompatActivity implements AdapterView.OnItemSel
 
     public void wyslijprzepis(View view) {
         Intent intent = new Intent(this, wprowadz_przepis.class);
-        EditText editText = (EditText) findViewById(R.id.editText2);
+        EditText editText = (EditText) findViewById(R.id.bialka);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);

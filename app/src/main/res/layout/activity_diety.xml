@@ -7,7 +7,7 @@
     tools:context="com.example.d.mojadieta.diety">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/nazwa"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -29,14 +29,14 @@
         android:layout_marginStart="16dp"
         android:onClick="Wprowadz_diete"
         android:text="@string/button_send"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
-        app:layout_constraintLeft_toRightOf="@+id/editText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nazwa"
+        app:layout_constraintLeft_toRightOf="@+id/nazwa"
         app:layout_constraintRight_toRightOf="parent"
         android:background="@drawable/przyciski"
         android:textColor="@android:color/white"/>
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/bialka"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
