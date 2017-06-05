@@ -27,7 +27,7 @@ public class diety extends AppCompatActivity implements AdapterView.OnItemSelect
     /** Called when the user taps the Send button */
     public void Wprowadz_diete(View view) {
         Intent intent = new Intent(this, wprowadz_diete.class);
-        EditText editText = (EditText) findViewById(R.id.editText);
+        EditText editText = (EditText) findViewById(R.id.nazwa);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);

@@ -26,7 +26,7 @@ public class XML {
         InputStream XmlFileInputStream;
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-        File file = new File("storage/sdcard/XML.txt");
+        File file = new File("storage/sdcard/XML.xml");
         Document document = documentBuilder.parse(new FileInputStream(file));
 
 

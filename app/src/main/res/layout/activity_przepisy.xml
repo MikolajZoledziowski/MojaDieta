@@ -7,7 +7,7 @@
     tools:context="com.example.d.mojadieta.przepisy">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/bialka"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -29,8 +29,8 @@
         android:layout_marginStart="16dp"
         android:onClick="wyslijprzepis"
         android:text="@string/button_send2"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
-        app:layout_constraintLeft_toRightOf="@+id/editText2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bialka"
+        app:layout_constraintLeft_toRightOf="@+id/bialka"
         app:layout_constraintRight_toRightOf="parent"
         android:background="@drawable/przyciski"
         android:textColor="@android:color/white"/>
@@ -49,7 +49,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/wybiezwage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"

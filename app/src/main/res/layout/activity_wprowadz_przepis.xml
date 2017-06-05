@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/tluszcze"
         android:layout_width="383dp"
         android:layout_height="179dp"
         android:layout_marginLeft="14dp"

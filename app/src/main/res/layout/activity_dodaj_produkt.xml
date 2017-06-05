@@ -15,7 +15,7 @@
 
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/bialka"
         android:layout_width="140dp"
         android:layout_height="41dp"
         android:layout_marginLeft="16dp"
@@ -24,7 +24,7 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/tluszcze" />
 
     <TextView
         android:id="@+id/textView12"
@@ -37,7 +37,7 @@
         android:gravity="bottom"
         android:textSize="18sp"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toRightOf="@+id/editText4"
+        app:layout_constraintLeft_toRightOf="@+id/tluszcze"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         android:layout_marginStart="8dp"
@@ -90,21 +90,21 @@
         tools:text="Dodaj Produkt" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/wybiezwage"
         android:layout_width="162dp"
         android:layout_height="40dp"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
-        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="142dp"
+        android:layout_marginTop="132dp"
         app:layout_constraintRight_toLeftOf="@+id/textView5"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/nazwa"
         android:layout_width="227dp"
         android:layout_height="49dp"
         android:layout_marginBottom="8dp"
@@ -117,7 +117,7 @@
         android:inputType="textPersonName"
         android:hint="Nazwa"
 
-        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintBottom_toTopOf="@+id/wybiezwage"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
@@ -133,11 +133,11 @@
         android:gravity="bottom"
         android:textSize="18sp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/nazwa"
         android:layout_marginEnd="16dp" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/tluszcze"
         android:layout_width="140dp"
         android:layout_height="41dp"
         android:ems="10"
@@ -145,11 +145,11 @@
         android:layout_marginLeft="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText7"
+        app:layout_constraintTop_toBottomOf="@+id/weglowodany"
         android:layout_marginStart="16dp" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/weglowodany"
         android:layout_width="140dp"
         android:layout_height="41dp"
         android:layout_marginLeft="16dp"
@@ -157,11 +157,11 @@
         android:inputType="number"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        app:layout_constraintTop_toBottomOf="@+id/kcal"
         android:layout_marginStart="16dp" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/kcal"
         android:layout_width="140dp"
         android:layout_height="41dp"
         android:layout_marginLeft="16dp"
@@ -172,7 +172,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:layout_constraintTop_toBottomOf="@+id/wybiezwage"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp" />
 
@@ -200,7 +200,7 @@
         android:gravity="bottom"
         android:textSize="18sp"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toRightOf="@+id/editText4"
+        app:layout_constraintLeft_toRightOf="@+id/tluszcze"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         android:layout_marginStart="8dp"
@@ -218,7 +218,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/bialka" />
 
     <Button
         android:id="@+id/button7"
@@ -227,7 +227,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/przyciski"
-        android:onClick="Dodajprodukt"
+        android:onClick="DodajP"
         android:text="Dodaj"
         android:textColor="@android:color/white"
         android:textSize="18sp"
