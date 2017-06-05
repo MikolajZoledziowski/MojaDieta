@@ -1,8 +1,14 @@
 package com.example.d.mojadieta;
-
+import java.util.*;
+import javax.xml.transform.*;
+import javax.xml.transform.stream.*;
+import javax.xml.transform.dom.*;
+import org.w3c.dom.*;
+import javax.xml.parsers.*;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Environment;
+import android.provider.DocumentsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,6 +19,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.xmlpull.v1.XmlSerializer;
 
 import java.io.File;
@@ -77,8 +85,10 @@ public class DodajProdukt extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dodaj_produkt);
         Intent intent = getIntent();
+        XML xml = new XML();
         //lista
         spinner=(Spinner) findViewById(R.id.spinner2);
+        Document document = null;
         ArrayAdapter adapter =ArrayAdapter.createFromResource(this,R.array.Rodzajewag,android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
         try {
@@ -86,8 +96,40 @@ public class DodajProdukt extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        try {
+             document = xml.get_xml();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Element root = document.getDocumentElement();
+        Element rootElement = document.getDocumentElement();
+        Element dataTag = document.getDocumentElement();
 
+        Element newProdukt = document.createElement("Produkt");
+        Element firstName = document.createElement("nazwa");
+        firstName.setTextContent("truskawak");
+
+        newProdukt.appendChild(firstName);
+        rootElement.appendChild(newProdukt);
+        DOMSource source = new DOMSource(document);
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        try {
+            Transformer transformer = transformerFactory.newTransformer();
+
+        StreamResult result = null;
+
+            result = new StreamResult(new FileOutputStream("storage/sdcard/test.txt"));
+
+        transformer.transform(source, result);
+        } catch (TransformerConfigurationException e) {
+            e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (TransformerException e) {
+            e.printStackTrace();
+        }
 
     }
+
 
 }
