@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Moja Dieta</string>
-    <string name="Button_Produkt">Produkt</string>
-    <string name="Activity_Produkt">         Produkt</string>
+    <string name="Button_Produkt">Produkty</string>
+    <string name="Activity_Produkt">         Produkty</string>
     <string name="button_send">+</string>
     <string name="button_send2">+</string>
     <string name="edit_message">nazwa nowej diety</string>

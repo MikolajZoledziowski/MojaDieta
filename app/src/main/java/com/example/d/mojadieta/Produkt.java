@@ -7,21 +7,29 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
 public class Produkt extends AppCompatActivity {
     Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_produkt);
-        spinner = (Spinner) findViewById(R.id.spinner);
 
-        ArrayAdapter adapter =ArrayAdapter.createFromResource(this,R.array.produkty_array,android.R.layout.simple_spinner_item);
-        spinner.setAdapter(adapter);
+
         Intent intent = getIntent();
     }
     public void ProduktDodaj(View view) {
         Intent intent = new Intent(this, DodajProdukt.class);
 
+        startActivity(intent);
+    }
+
+    public void ProduktWyswietl(View view) {
+
+        Intent intent = new Intent(this, Lista_prodoktow.class);
         startActivity(intent);
     }
 }

@@ -42,27 +42,50 @@ public class DodajProdukt extends AppCompatActivity {
         Element produkty = (Element) rootElement.getElementsByTagName("produkty").item(0);
 
         Element newProdukt = document.createElement("produkt");
-        newProdukt.setAttribute("nazwa",nazwa.getText().toString());
+
+
+        Element nazwa2= document.createElement("nazwa");
+        nazwa2.setTextContent(nazwa.getText().toString());
+        newProdukt.appendChild(nazwa2);
+
+
+
 
         Element waga= document.createElement("waga");
         waga.setTextContent("100");
         newProdukt.appendChild(waga);
 
+
+
+
+
         Element rodzaj_wagi= document.createElement("rodzaj_wagi");
         rodzaj_wagi.setTextContent(jednostka.getSelectedItem().toString());
         newProdukt.appendChild(rodzaj_wagi);
+
+
+
 
         Element kcal2 = document.createElement("kcal");
         kcal2.setTextContent(kcal.getText().toString());
         newProdukt.appendChild(kcal2);
 
+
+
+
         Element weglowodany2= document.createElement("weglowodany");
         weglowodany2.setTextContent(weglowodany.getText().toString());
         newProdukt.appendChild(weglowodany2);
 
+
+
+
         Element tluszcze2= document.createElement("tluszcze");
         tluszcze2.setTextContent(tluszcze.getText().toString());
         newProdukt.appendChild(tluszcze2);
+
+
+
 
         Element bialka2= document.createElement("bialka");
         bialka2.setTextContent(bialka.getText().toString());

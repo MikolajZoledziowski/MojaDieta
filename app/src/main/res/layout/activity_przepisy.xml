@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="103dp"
         android:hint="@string/edit_message2"
         android:inputType="textPersonName"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -37,8 +37,8 @@
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="182dp"
+        android:layout_height="45dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
@@ -48,17 +48,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Spinner
-        android:id="@+id/wybiezwage"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.333" />
-
     <EditText
         android:id="@+id/editText5"
         android:layout_width="386dp"
@@ -67,10 +56,36 @@
         android:layout_marginLeft="17dp"
         android:ems="10"
         android:gravity="top"
+        android:hint="Informacje szczególowe"
         android:inputType="textMultiLine"
-        android:text="Informacje szczególowe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         tools:layout_editor_absoluteY="358dp" />
+
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/przepisy"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="225dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/przyciski"
+        android:onClick="PrzepisWyswietl"
+        android:text="Wyświetl przepisy"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bialka" />
 
 </android.support.constraint.ConstraintLayout>

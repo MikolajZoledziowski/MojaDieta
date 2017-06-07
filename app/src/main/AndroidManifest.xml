@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.d.mojadieta">
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,18 +25,31 @@
         <activity
             android:name=".DodajProdukt"
             android:parentActivityName=".Produkt" />
-        <activity android:name=".Lodowka"
-                  android:parentActivityName=".MenuGlowne"/>
-        <activity android:name=".przepisy"
-                  android:parentActivityName=".MenuGlowne"/>
-        <activity android:name=".wprowadz_przepis"
-                  android:parentActivityName=".przepisy"/>
-        <activity android:name=".diety"
-                  android:parentActivityName=".MenuGlowne"/>
-        <activity android:name=".wprowadz_diete"
-                  android:parentActivityName=".diety"/>
-        <activity android:name=".Dodaj_zawartosc"
-                  android:parentActivityName=".Lodowka"/>
+        <activity
+            android:name=".Lodowka"
+            android:parentActivityName=".MenuGlowne" />
+        <activity
+            android:name=".przepisy"
+            android:parentActivityName=".MenuGlowne" />
+        <activity
+            android:name=".wprowadz_przepis"
+            android:parentActivityName=".przepisy" />
+        <activity
+            android:name=".diety"
+            android:parentActivityName=".MenuGlowne" />
+        <activity
+            android:name=".wprowadz_diete"
+            android:parentActivityName=".diety" />
+        <activity
+            android:name=".Dodaj_zawartosc"
+            android:parentActivityName=".Lodowka"
+            />
+        <activity android:name=".Lista_prodoktow" />
+
+        <activity android:name=".Lista_prodoktow2" />
+        <activity android:name=".Lista_przepisow" />
+        <activity android:name=".Plan" />
+        <activity android:name=".lista_przepisow2"></activity>
     </application>
 
 </manifest>

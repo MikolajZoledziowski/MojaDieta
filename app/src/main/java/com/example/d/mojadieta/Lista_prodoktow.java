@@ -1,30 +1,38 @@
 package com.example.d.mojadieta;
 
+
 import android.app.ListActivity;
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.View;
+
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import static com.example.d.mojadieta.R.id.nazwa;
 
-public class Lodowka extends ListActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+public class Lista_prodoktow extends ListActivity {
+
+
+
+
+
+
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lodowka);
+        setContentView(R.layout.activity_lista_prodoktow);
+
         ArrayList<HashMap<String, String>> menuItems = new ArrayList<HashMap<String, String>>();
 
 
@@ -36,20 +44,19 @@ public class Lodowka extends ListActivity {
             e.printStackTrace();
         }
         Element rootElement = doc.getDocumentElement();
-        Element produkty = (Element) rootElement.getElementsByTagName("lodowka").item(0);
-
+        Element produkty = (Element) rootElement.getElementsByTagName("produkty").item(0);
         NodeList nl = produkty.getChildNodes();
 
         // looping through all item nodes <item>
-
         for (int i = 0; i < nl.getLength(); i++) {
             // creating new HashMap
             HashMap<String, String> map = new HashMap<String, String>();
             Element e = (Element) nl.item(i);
             // adding each child node to HashMap key => value
             NodeList za = e.getChildNodes();
-            map.put("wszystko" ,za.item(0).getTextContent()+":"+za.item(1).getTextContent()+"g");
-            map.put("cos" ,za.item(1).getTextContent());
+            map.put("nazwa", za.item(0).getTextContent());
+            map.put("waga", za.item(1).getTextContent()+" "+za.item(2).getTextContent());
+            map.put("kcal", "Kcal:"+za.item(3).getTextContent()+" Weglowodany:"+za.item(4).getTextContent()+" Tluszcz:"+za.item(5).getTextContent()+" Białko"+za.item(6).getTextContent());
 
 
 
@@ -60,20 +67,11 @@ public class Lodowka extends ListActivity {
 
         // Adding menuItems to ListView
         ListAdapter adapter = new SimpleAdapter(this, menuItems,
-                R.layout.lodowka,
-                new String[] { "wszystko","cos"}, new int[] {
-                R.id.wszystko,R.id.cos});
+                R.layout.produkt,
+                new String[] { "nazwa","waga","kcal"}, new int[] {
+                nazwa ,R.id.waga,R.id.kcal});
         setListAdapter(adapter);
         ListView lv = getListView();
-    }
-    public void ZawstoscDodaj(View view) {
-        Intent intent = new Intent(this, Dodaj_zawartosc.class);
-
-        startActivity(intent);
-    }
-    public void wroc(View view) {
-        Intent intent = new Intent(this, MenuGlowne.class);
-
-        startActivity(intent);
+        // listening to single listitem click
     }
 }
